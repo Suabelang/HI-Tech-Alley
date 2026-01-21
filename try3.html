@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="V.1.3">
+  <title>HI- Tech Alley | Home</title>
+  <!-- Icons -->
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Bootstrap stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Google Web Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Libraries Stylesheet -->
+  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+  <!-- Custom stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+   <link rel="stylesheet" href="assets/css/products.css">
+ 
+
+
+  <!-- cookie -->
+  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
+  <script src="assets/js/glow-cookies.js"></script>
+
+         
+    
+</head>
+<body>
+ <!-- Example buttons to open the modals -->
+<button data-product-key="laptop1" onclick="openModal('laptop1')">Open Laptop 1</button>
+<button data-product-key="laptop2" onclick="openModal('laptop2')">Open Laptop 2</button>
+
+<!-- Product View Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Product Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="view-container">
+                    <!-- Product Gallery -->
+                    <div class="gallery-container">
+                        <img id="mainImage" class="main-image" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Main Image" onclick="openFullscreenModal()">
+                        
+                        <div class="thumbnail-wrapper">
+                            <div class="preview-button preview-prev-button" onclick="prevImage()">&#10094;</div>
+                            <div class="thumbnail-container">
+                                <div class="thumbnails" id="thumbnailList">
+                                    <!-- Thumbnails will be populated here dynamically -->
+                                </div>
+                            </div>
+                            <div class="preview-button preview-next-button" onclick="nextImage()">&#10095;</div>
+                        </div>
+                    </div>
+
+                    <!-- Fullscreen Image Viewer Modal -->
+                    <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="fullscreen-image-wrapper">
+                                        <img id="fullscreenImage" class="fullscreen-img" src="" alt="Fullscreen Image">
+                                    </div>
+                                    <div class="fullscreen-thumbnail-wrapper">
+                                        <button class="fullscreen-button fullscreen-prev-button" onclick="prevFullscreenImage()">&#10094;</button>
+                                        <div class="fullscreen-thumbnail-container">
+                                            <div class="fullscreen-thumbnails" id="fullscreenThumbnailList">
+                                                <!-- Fullscreen thumbnails will be populated here -->
+                                            </div>
+                                        </div>
+                                        <button class="fullscreen-button fullscreen-next-button" onclick="nextFullscreenImage()">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const products = {
+    laptop1: {
+        name: "Lenovo Ideapad Flex 3",
+        title: "Laptop XYZ Pro",
+        description: "16-inch Full HD, Intel Core i5-12450H, 8GB RAM",
+        price: "₱999.99",
+        mainImage: "assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png",
+        thumbnails: [
+            "assets/images/laptop/laptop-cards/Acer Chromebook R751T.png",
+            "assets/images/laptop/laptop-cards/Acer Travelmate B-11.png",
+            "assets/images/laptop/laptop-cards/Acer Vivobook x1605z.png",
+            "assets/images/laptop/laptop-cards/Asus Vivobook E1404F.png"
+        ],
+        variations: [
+            "8GB RAM / 512GB SSD",
+            "16GB RAM / 1TB SSD",
+            "32GB RAM / 2TB SSD"
+        ],
+        highlights: [
+            "<strong>Campaigns:</strong> New Arrivals, Free Delivery, Best Deals",
+            "<strong>Height (cm):</strong> 1.84",
+            "<strong>Width (cm):</strong> 35.67",
+            "<strong>Length (cm):</strong> 24.87",
+            "<strong>Gross Weight (kg):</strong> 2.58kg",
+            "<strong>Warranty:</strong> 1 year on parts and labor; Service direct to Authorized Service Center",
+            "<strong>Net Weight (kg):</strong> 1.7"
+        ],
+        features: [
+            "<strong>Display Size (Inches):</strong> 16-inch",
+            "<strong>Resolution:</strong> Full HD (1920 x 1200)",
+            "<strong>Operating System:</strong> Windows 11",
+            "<strong>Hard Drive Capacity:</strong> 512GB SSD",
+            "<strong>Processor:</strong> Intel Core i5-12450H",
+            "<strong>Graphics Card:</strong> Intel UHD Graphics",
+            "<strong>Memory:</strong> 8GB RAM"
+        ],
+        overview: [
+            "<strong>Campaigns:</strong> New Arrivals, Free Delivery, Best Deals",
+            "<strong>Height (cm):</strong> 1.84",
+            "<strong>Width (cm):</strong> 35.67",
+            "<strong>Length (cm):</strong> 24.87",
+            "<strong>Gross Weight (kg):</strong> 2.58kg",
+            "<strong>Warranty:</strong> 1 year on parts and labor; Service direct to Authorized Service Center",
+            "<strong>Net Weight (kg):</strong> 1.7"
+        ]
+    },
+    laptop2: {
+        name: "Lenovo Ideapad Flex 5",
+        title: "Lenovo Ideapad Flex 3 - Enhanced Edition",
+        description: "16-inch Full HD, Intel Core i7-1260P, 16GB RAM",
+        price: "₱1,299.99",
+        mainImage: "assets/images/laptop/laptop-cards/MSI Modern 14.png",
+        thumbnails: [
+            "assets/images/laptop/laptop-cards/MSI Modern 14.png",
+            "assets/images/laptop/laptop-cards/Lenovo Thinkpad T14.png",
+            "assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 5.png",
+            "assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png"
+        ],
+        variations: [
+            "16GB RAM / 512GB SSD",
+            "32GB RAM / 1TB SSD",
+            "64GB RAM / 2TB SSD"
+        ],
+        highlights: [
+            "<strong>Campaigns:</strong> New Arrivals, Free Delivery, Best Deals",
+            "<strong>Height (cm):</strong> 1.85",
+            "<strong>Width (cm):</strong> 36.0",
+            "<strong>Length (cm):</strong> 25.0",
+            "<strong>Gross Weight (kg):</strong> 2.6kg",
+            "<strong>Warranty:</strong> 2 years on parts and labor; Service direct to Authorized Service Center",
+            "<strong>Net Weight (kg):</strong> 1.8"
+        ],
+        features: [
+            "<strong>Display Size (Inches):</strong> 16-inch",
+            "<strong>Resolution:</strong> Full HD (1920 x 1200)",
+            "<strong>Operating System:</strong> Windows 11 Pro",
+            "<strong>Hard Drive Capacity:</strong> 1TB SSD",
+            "<strong>Processor:</strong> Intel Core i7-1260P",
+            "<strong>Graphics Card:</strong> Intel Iris Xe Graphics",
+            "<strong>Memory:</strong> 16GB RAM"
+        ],
+        overview: [
+            "<strong>Campaigns:</strong> New Arrivals, Free Delivery, Best Deals",
+            "<strong>Height (cm):</strong> 1.85",
+            "<strong>Width (cm):</strong> 36.0",
+            "<strong>Length (cm):</strong> 25.0",
+            "<strong>Gross Weight (kg):</strong> 2.6kg",
+            "<strong>Warranty:</strong> 2 years on parts and labor; Service direct to Authorized Service Center",
+            "<strong>Net Weight (kg):</strong> 1.8"
+        ]
+    },
+};
+
+let currentIndex = 0; // Initialize current index
+let currentProductKey = ''; // Global variable to store the current product key
+
+function openModal(productKey) {
+    currentProductKey = productKey; // Set the current product key
+    const product = products[productKey];
+    
+    // Update modal content
+    document.getElementById('productModalLabel').innerText = product.title; // Modal title
+    document.getElementById('mainImage').src = product.mainImage; // Main image
+    
+    // Update product details
+    document.getElementById('modalProductTitle').innerText = product.name; // Product name
+    document.getElementById('modalShortDescription').innerText = product.description; // Short description
+    document.getElementById('modalProductPrice').innerText = `Price: ${product.price}`; // Product price
+    
+    // Update thumbnails
+    const thumbnailList = document.getElementById('thumbnailList');
+    thumbnailList.innerHTML = ''; // Clear existing thumbnails
+    product.thumbnails.forEach((src, index) => {
+        const img = document.createElement('img'); // Create a new img element
+        img.className = 'thumbnail'; // Use existing CSS class for thumbnails
+        img.src = src; // Set the source of the image
+        img.onclick = function() { changeImage(this); }; // Change image on click
+        thumbnailList.appendChild(img); // Append the img to the thumbnail list
+    });
+
+    // Set current index to the first thumbnail
+    currentIndex = 0;
+
+    // Show the modal
+    const modal = new bootstrap.Modal(document.getElementById('productModal'));
+    modal.show();
+}
+
+function openFullscreenModal() {
+    const product = products[currentProductKey]; // Get the current product based on the key
+    const fullscreenImage = document.getElementById("fullscreenImage");
+    const fullscreenThumbnailList = document.getElementById("fullscreenThumbnailList");
+    fullscreenThumbnailList.innerHTML = ""; // Clear existing thumbnails
+
+    // Set the main image for fullscreen
+    fullscreenImage.src = product.mainImage;
+
+    // Populate fullscreen thumbnails
+    product.thumbnails.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.className = 'thumbnailList'; // Use existing CSS class for thumbnails
+        img.src = src; // Set the source of the image
+        img.addEventListener("click", function () {
+            updateFullscreenImage(this);
+        });
+        fullscreenThumbnailList.appendChild(img);
+    });
+
+    // Show the fullscreen modal
+    const modalInstance = new bootstrap.Modal(document.getElementById('fullscreenModal'));
+    modalInstance.show();
+}
+
+function updateFullscreenImage(element) {
+    document.getElementById("fullscreenImage").src = element.src;
+}
+
+// Add the rest of your existing functions for changing images, etc.
+function changeImage(element) {
+    document.getElementById("mainImage").src = element.src;
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    thumbnails.forEach(img => img.classList.remove("active"));
+    element.classList.add("active");
+    currentIndex = [...thumbnails].indexOf(element);
+    slideThumbnails();
+}
+
+function prevImage() {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = thumbnails.length - 1; // Jump to the last image
+    }
+    updateMainImage();
+}
+
+function nextImage() {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    if (currentIndex < thumbnails.length - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0; // Loop back to the first image
+    }
+    updateMainImage();
+}
+
+function updateMainImage() {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    document.getElementById("mainImage").src = thumbnails[currentIndex].src;
+    thumbnails.forEach(img => img.classList.remove("active"));
+    thumbnails[currentIndex].classList.add("active");
+    slideThumbnails();
+}
+
+function slideThumbnails() {
+    const thumbnailList = document.getElementById("thumbnailList");
+    let offset = currentIndex * -90; // Adjust based on your thumbnail width
+    thumbnailList.style.transition = "transform 0.5s ease-in-out"; // Add smooth effect
+    thumbnailList.style.transform = `translateX(${offset}px)`;
+}
+
+// Fullscreen navigation functions
+function prevFullscreenImage() {
+    const fullscreenThumbnails = document.querySelectorAll(".thumbnailList");
+    if (fullscreenIndex > 0) {
+        fullscreenIndex--;
+    } else {
+        fullscreenIndex = fullscreenThumbnails.length - 1; // Loop to the last image
+    }
+    updateFullscreenView();
+}
+
+function nextFullscreenImage() {
+    const fullscreenThumbnails = document.querySelectorAll(".thumbnailList");
+    if (fullscreenIndex < fullscreenThumbnails.length - 1) {
+        fullscreenIndex++;
+    } else {
+        fullscreenIndex = 0; // Loop to the first image
+    }
+    updateFullscreenView();
+}
+
+function updateFullscreenView() {
+    const fullscreenThumbnails = document.querySelectorAll(".thumbnailList");
+    document.getElementById("fullscreenImage").src = fullscreenThumbnails[fullscreenIndex].src;
+    fullscreenThumbnails.forEach(img => img.classList.remove("active"));
+    fullscreenThumbnails[fullscreenIndex].classList.add("active");
+}
+
+// Add event listeners for fullscreen navigation buttons
+document.querySelector(".fullscreen-prev-button").addEventListener("click", prevFullscreenImage);
+document.querySelector(".fullscreen-next-button").addEventListener("click", nextFullscreenImage);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>
+

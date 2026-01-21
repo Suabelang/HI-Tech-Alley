@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="V.1.3">
+  <title>HI- Tech Alley | Home</title>
+  <!-- Icons -->
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Bootstrap stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Google Web Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Libraries Stylesheet -->
+  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+  <!-- Custom stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+   <link rel="stylesheet" href="assets/css/products.css">
+ 
+
+
+  <!-- cookie -->
+  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
+  <script src="assets/js/glow-cookies.js"></script>
+
+         
+    
+</head>
+<body>
+ <header id="header" class="header d-flex align-items-center">
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div id="header-logo">
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="logo"> 
+      </a>
+    </div>
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    <nav id="nav-bar" class="navbar">
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <!-- Add other nav items here -->
+       <li class="dropdown">
+    <a href="#"><span>Services</span>
+      <i class="bi bi-chevron-down dropdown-indicator"></i>
+      </a>
+      <ul>
+        <li><a href="mobile-repair.html">Mobile Repair</a></li>
+        <li><a href="laptop-repair.html">Laptop Repair</a></li>
+        <li><a href="printer-repair.html">Printer Repair</a></li>
+         </ul>
+    <li class="dropdown">
+      <a href="products.html" class="active"><span>Product</span> 
+        <i class="bi bi-chevron-down dropdown-indicator"></i>
+      </a>
+      <ul>
+       <li><a href="product-smartphone.html">Smartphone</a></li>
+        <li><a href="product-laptop.html">Laptop</a></li>
+        <li><a href="product-cctv.html">CCTV</a></li>
+        <li><a href="product-printer.html">Printer</a></li>
+        <li><a href="Product-monitor.html">Monitor</a></li>
+        <li><a href="product-audiogear.html">Audio Gear</a></li>
+        <li><a href="/pages/products-services/accessories.html">Accessories</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+<section>
+    <div class="view-container mt-4">
+        <!-- Product Gallery -->
+        <div class="gallery-container">
+            <img id="mainImage" class="main-image" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Main Image">
+            
+            <div class="thumbnail-wrapper">
+                <div class="preview-button preview-prev-button" onclick="prevImage()">&#10094;</div>
+                <div class="thumbnail-container">
+                    <div class="thumbnails" id="thumbnailList">
+                        <img class="thumbnail active" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" onclick="changeImage(this)">
+                        <img class="thumbnail" src="assets/images/laptop/laptop-cards/Acer Swift 3.png" onclick="changeImage(this)">
+                        <img class="thumbnail" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" onclick="changeImage(this)">
+                        <img class="thumbnail" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" onclick="changeImage(this)">
+                        <img class="thumbnail" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" onclick="changeImage(this)">
+                        <img class="thumbnail" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" onclick="changeImage(this)">
+                    </div>
+                </div>
+                <div class="preview-button preview-next-button" onclick="nextImage()">&#10095;</div>
+            </div>
+        </div>
+
+
+
+<!-- New Wrapper for Highlights and Product Details -->
+        <div class="product-info-container" id="infoContainer">
+
+
+             <!-- Product Details Section -->
+            <div class="product-details">
+                <h2 class="product-title">Laptop XYZ Pro</h2>
+                <p class="short-description">16-inch Full HD, Intel Core i5-12450H, 8GB RAM</p>
+                <p class="product-price">Price: ₱999.99</p>
+               <div class="product-colors">
+                <span class="color-label">Colors:</span>
+                 <div class="color-options">
+                    <span class="color-option black"></span>
+                    <span class="color-option silver"></span>
+                     <span class="color-option blue"></span>
+                 </div>
+                </div>
+
+               <!-- Product Variations (For Info Only) -->
+    <div class="product-variation my-3">
+        <span class="fw-bold">Available Variations:</span>
+        <div class="variation-container">
+            <div class="variation-box">8GB RAM / 512GB SSD</div>
+            <div class="variation-box">16GB RAM / 1TB SSD</div>
+            <div class="variation-box">32GB RAM / 2TB SSD</div>
+        </div>
+    </div>
+            </div>
+            <br>
+            <div>
+ <h3 class="product-features" >Product Features</h3>
+</div>
+            <!-- Highlights Section -->
+            <div class="highlights-container">
+
+                <div class="highlights-title">
+                    <h5>Highlights</h5>
+                </div>
+                <div class="highlights-content">
+                    <div class="highlight-column">
+                        <p><strong>Campaigns:</strong> New Arrivals, Free Delivery, Best Deals</p>
+                        <p><strong>Height (cm):</strong> 1.84</p>
+                        <p><strong>Width (cm):</strong> 35.67</p>
+                        <p><strong>Length (cm):</strong> 24.87</p>
+                        <p><strong>Gross Weight (kg):</strong> 2.58kg</p>
+                        <p><strong>Warranty:</strong> 1 year on parts and labor; Service direct to Authorized Service Center</p>
+                        <p><strong>Net Weight (kg):</strong> 1.7</p>
+                    </div>
+                    <div class="highlight-column">
+                        <p><strong>Display Size (Inches):</strong> 16-inch</p>
+                        <p><strong>Resolution:</strong> Full HD (1920 x 1200)</p>
+                        <p><strong>Operating System:</strong> Windows 11</p>
+                        <p><strong>Hard Drive Capacity:</strong> 512GB SSD</p>
+                        <p><strong>Processor:</strong> Intel Core i5-12450H</p>
+                        <p><strong>Graphics Card:</strong> Intel UHD Graphics</p>
+                        <p><strong>Memory:</strong> 8GB RAM</p>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Highlights Section -->
+            <div class="highlights-container">
+
+                <div class="highlights-title">
+                    <h5>Features</h5>
+                </div>
+                <div class="highlights-content">
+                    <div class="features-column">
+                        <p>Campaigns:New Arrivals, Free Delivery, Best Deals</p>
+                        <p>Height (cm):> 1.84</p>
+                        <p>Width (cm):< 35.67</p>
+                        <p>Length (cm): 24.87</p>
+                        <p>Gross Weight (kg): 2.58kg</p>
+                        <p>Warranty: 1 year on parts and labor; Service direct to Authorized Service Center</p>
+                        <p><Net Weight (kg): 1.7</p>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Highlights Section -->
+            <div class="highlights-container">
+
+                <div class="highlights-title">
+                    <h5>Overview</h5>
+                </div>
+                <div class="highlights-content">
+                    <div class="features-column">
+                        <p>Campaigns:New Arrivals, Free Delivery, Best Deals</p>
+                        <p>Height (cm):> 1.84</p>
+                        <p>Width (cm):< 35.67</p>
+                        <p>Length (cm): 24.87</p>
+                        <p>Gross Weight (kg): 2.58kg</p>
+                        <p>Warranty: 1 year on parts and labor; Service direct to Authorized Service Center</p>
+                        <p><Net Weight (kg): 1.7</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div> <!-- End of product-info-container -->
+    </div>
+</section>
+
+<section class="mobile-laptop-section">
+<!-- NEW MOBILE LAPTOP CARDS WITH SLIDER -->
+ <div class="laptop-mobilecarousel">
+    <div class="show-more-container">
+        <h2 class="show-more-title">Smart Phones</h2>
+    </div>
+
+
+          <button class="nav-button prev" onclick="moveLaptopMobileSlide(-1)">&#10094;</button>
+        <div class="carousellaptopmobile">
+             <div class="custom-col">
+                <div class="mobile-laptop-card">
+                    <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col">
+                <div class="mobile-laptop-card">
+                    <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col">
+                <div class="mobile-laptop-card">
+                    <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col">
+                <div class="mobile-laptop-card">
+                   <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+             <div class="custom-col">
+                <div class="mobile-laptop-card">
+                    <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-col">
+                <div class="mobile-laptop-card">
+                    <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="custom-col">
+                <div class="mobile-laptop-card">
+                   <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="custom-col">
+                <div class="mobile-laptop-card">
+                   <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-col">
+                <div class="mobile-laptop-card">
+                    <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                    <div class="mobile-laptop-info">
+                        <h5>MacBook Pro M2</h5>
+                        <p>High-performance laptop.</p>
+                        <span class="mobile-laptop-price">$1,499</span>
+                        <a href="#" class="btn-mobile-laptop">View</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+         </div>
+    
+<button class="nav-button next" onclick="moveLaptopMobileSlide(1)">&#10095;</button>
+
+         <div class="show-more-container">
+        <a href="more-laptops.html" class="show-more-btn">Show More</a>
+    </div>
+    </div>
+</section>
+
+
+ <!-- NEW LAPTOP CCTV CARDS WITH SLIDER -->
+<!-- NEW CCTV LAPTOP CARDS WITH SLIDER -->
+<section class="cctv-laptop-section">
+<div class="laptop-cctvcarousel">
+    <div class="show-more-container">
+        <h2 class="show-more-title">CCTV Cameras</h2>
+    </div>
+
+    <button class="nav-button prev" onclick="moveLaptopCCTVSlide(-1)">&#10094;</button>
+    <div class="carousellaptopcctv">
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Hikvision 1080p</h5>
+                    <p>High-definition security camera.</p>
+                    <span class="cctv-laptop-price">$199</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+              <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Dahua 4MP</h5>
+                    <p>Advanced surveillance solution.</p>
+                    <span class="cctv-laptop-price">$249</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>EZVIZ C6N</h5>
+                    <p>360° smart home camera.</p>
+                    <span class="cctv-laptop-price">$89</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Reolink 5MP</h5>
+                    <p>High-resolution outdoor camera.</p>
+                    <span class="cctv-laptop-price">$299</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Arlo Pro 4</h5>
+                    <p>Wireless smart security camera.</p>
+                    <span class="cctv-laptop-price">$349</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+         <div class="custom-col">
+            <div class="cctv-laptop-card">
+              <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Dahua 4MP</h5>
+                    <p>Advanced surveillance solution.</p>
+                    <span class="cctv-laptop-price">$249</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>EZVIZ C6N</h5>
+                    <p>360° smart home camera.</p>
+                    <span class="cctv-laptop-price">$89</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Reolink 5MP</h5>
+                    <p>High-resolution outdoor camera.</p>
+                    <span class="cctv-laptop-price">$299</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col">
+            <div class="cctv-laptop-card">
+                <img src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Lenovo Ideapad Flex 3">
+                <div class="cctv-laptop-info">
+                    <h5>Arlo Pro 4</h5>
+                    <p>Wireless smart security camera.</p>
+                    <span class="cctv-laptop-price">$349</span>
+                    <a href="#" class="btn-cctv-laptop">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="nav-button next" onclick="moveLaptopCCTVSlide(1)">&#10095;</button>
+
+    <div class="show-more-container">
+        <a href="more-cctvs.html" class="show-more-btn">Show More</a>
+    </div>
+</div>
+</section>
+
+
+    <script>
+      function initCarousel(carouselClass) {
+    let currentIndex = 0;
+    const carousel = document.querySelector(`.${carouselClass}`);
+    const totalCards = carousel.querySelectorAll('.custom-col').length;
+    const visibleCards = 5; 
+    const maxIndex = totalCards - visibleCards;
+
+    function moveSlide(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        } else if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
+        }
+        const translateValue = -currentIndex * (100 / visibleCards) + "%";
+        carousel.style.transform = `translateX(${translateValue})`;
+    }
+
+    return moveSlide;
+}
+
+// Initialize carousels
+const moveLaptopMobileSlide = initCarousel('carousellaptopmobile');
+const moveLaptopCCTVSlide = initCarousel('carousellaptopcctv');
+
+    </script>
+
+      <script>
+        let thumbnails = document.querySelectorAll(".thumbnail");
+        let currentIndex = 0;
+        let thumbnailList = document.getElementById("thumbnailList");
+        function changeImage(element) {
+            document.getElementById("mainImage").src = element.src;
+            thumbnails.forEach(img => img.classList.remove("active"));
+            element.classList.add("active");
+            currentIndex = [...thumbnails].indexOf(element);
+            slideThumbnails();
+        }
+        function prevImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateMainImage();
+            }
+        }
+        function nextImage() {
+            if (currentIndex < thumbnails.length - 1) {
+                currentIndex++;
+                updateMainImage();
+            }
+        }
+        function updateMainImage() {
+            document.getElementById("mainImage").src = thumbnails[currentIndex].src;
+            thumbnails.forEach(img => img.classList.remove("active"));
+            thumbnails[currentIndex].classList.add("active");
+            slideThumbnails();
+        }
+        function slideThumbnails() {
+            let offset = currentIndex * -90;
+            thumbnailList.style.transform = `translateX(${offset}px)`;
+        }
+    </script>
+
+
+     
+      <script>
+       const infoContainer = document.querySelector(".product-info-container");
+const viewContainer = document.querySelector(".view-container");
+
+window.addEventListener("wheel", (event) => {
+    const atBottom = infoContainer.scrollHeight - infoContainer.scrollTop <= infoContainer.clientHeight;
+    const atTop = infoContainer.scrollTop === 0;
+  
+    // If scrolling down but not at the bottom, scroll infoContainer only
+    if (event.deltaY > 0 && !atBottom) {
+        event.preventDefault();
+        infoContainer.scrollTop += event.deltaY;
+    }
+
+    // If scrolling up but not at the top, scroll infoContainer only
+    if (event.deltaY < 0 && !atTop) {
+        event.preventDefault();
+        infoContainer.scrollTop += event.deltaY;
+    }
+});
+
+// Handle sticky effect removal at bottom
+window.addEventListener("scroll", () => {
+    const containerBottom = infoContainer.offsetTop + infoContainer.offsetHeight;
+    const scrollY = window.scrollY + window.innerHeight;
+
+    // If the page scrolls beyond the product-info-container, stop sticky
+    if (scrollY >= containerBottom) {
+        infoContainer.style.position = "relative";
+    } else {
+        infoContainer.style.position = "sticky";
+        infoContainer.style.top = "20px";
+    }
+});
+
+    </script>
+ 
+
+
+ <div class="curvedproduct">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 220">
+
+    <path fill="#3E7B27" fill-opacity="1" d="M0,256L480,160L960,224L1440,160L1440,320L960,320L480,320L0,320Z"></path>
+</svg>
+    </div>
+     <!-- ======= Footer Start ======= -->
+
+  <footer id="footer" class="footer dark-background">
+  <div id="particles-footer" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+  <div class="footer-top"> 
+          
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-lg-2 col-md-3 footer-links">
+
+          <div class="footer-image">
+            <img src="assets/images/footerimg.png" alt="services">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Hi-Tech Alley</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Pigangay Building</p>
+            <p>Poblacion West, Lamut, Ifugao</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+63 917 166 6221</span></p>
+            <p><strong>Email:</strong> <span>hitechavlley@example.com</span></p>
+          </div>
+        </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Mobile Repair</a></li>
+              <li><a href="#">Laptop Repair</a></li>
+              <li><a href="#">Printer Repair</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright2025 <strong><span>Hi-TechAlley</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+  
+  </footer>
+  
+<div id="cookie-banner" class="cookie-banner">
+    <p>We use cookies to enhance your experience. By clicking "Accept", you agree to our use of cookies.</p>
+    <button id="accept-cookies">Accept</button>
+    <!-- Reset cookies button -->
+</div>
+
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Custom scripts -->
+ <script src="assets/js/script.js"></script>
+  <script src="assets/js/particles.js"></script>
+
+
+
+</body>
+</html>
+

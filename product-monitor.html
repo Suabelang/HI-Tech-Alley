@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="V.1.3">
+  <title>HI- Tech Alley | Home</title>
+  <!-- Icons -->
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Bootstrap stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Google Web Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Libraries Stylesheet -->
+  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+  <!-- Custom stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+   <link rel="stylesheet" href="assets/css/products.css">
+ 
+
+
+  <!-- cookie -->
+  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
+  <script src="assets/js/glow-cookies.js"></script>
+  
+    <style>
+        
+/* Keep all columns flexible */
+.custom-col {
+    display: flex;
+    justify-content: center; /* center card horizontally in the row */
+}
+
+/* Card layout vertical */
+.monitor-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center; /* center content inside card */
+}
+
+/* Ensure images are same height AND centered */
+.monitor-card img {
+    width: auto;        /* maintain aspect ratio */
+    max-width: 100%;    /* don’t overflow card */
+    height: 200px;      /* consistent height */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;     /* center image horizontally */
+}
+
+/* Card content container */
+.monitor-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Price spacing consistency */
+.monitor-price {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* CENTER + BOTTOM ALIGN VIEW BUTTON */
+.monitor-info button {
+    margin-top: auto;       /* push button to bottom */
+    align-self: center;     /* center horizontally */
+    width: 80%;             /* adjust width as desired */
+    text-align: center;     /* text centered inside button */
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Optional: hover effect for cards */
+.monitor-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.monitor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .custom-col {
+        width: 100%;
+        justify-content: center; /* keep cards centered on mobile */
+    }
+}
+
+    </style>
+</head>
+<body>
+ <header id="header" class="header d-flex align-items-center">
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div id="header-logo">
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="logo"> 
+      </a>
+    </div>
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    <nav id="nav-bar" class="navbar">
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <!-- Add other nav items here -->
+       <li class="dropdown">
+    <a href="services.html"><span>Services</span>
+      <i class="bi bi-chevron-down dropdown-indicator"></i>
+      </a>
+      <ul>
+        <li><a href="mobile-repair.html">Mobile Repair</a></li>
+        <li><a href="laptop-repair.html">Laptop Repair</a></li>
+        <li><a href="printer-repair.html">Printer Repair</a></li>
+         </ul>
+       </li>
+    <li class="dropdown">
+        <a href="products.html" class="active"><span>Product</span> 
+        <i class="bi bi-chevron-down dropdown-indicator"></i>
+      </a>
+      <ul>
+             <li><a href="product-smartphone.html">Smartphone</a></li>
+              <li><a href="product-laptop.html">Laptop</a></li>
+              <li><a href="product-printer.html">Printer</a></li>
+              <li><a href="product-monitor.html">Monitor</a></li>
+              <li><a href="product-audiogear.html">Audio Gear</a></li>
+              <li><a href="product-powerbank.html">Power Bank</a></li>
+
+              <li class="dropdown">
+                <a href="#">Components<i class="bi bi-chevron-down dropdown-indicator"></i></a> 
+                <ul>
+                  <li><a href="product-fan.html">CPU Fan</a></li>
+                  <li><a href="product-graphiccard.html">Graphic Card</a></li>
+                  <li><a href="product-internalhdd.html">Internal HDD</a></li>
+                  <li><a href="product-motherboard.html">Motherboard</a></li>
+                  <li><a href="product-external storage.html">External Storage</a></li>
+                  <li><a href="product-processor.html">Processor</a></li>
+                  <li><a href="product-ram.html">RAM</a></li>
+                  <li><a href="product-ssd.html">SSD</a></li>
+
+                </ul>
+            </li>
+
+              <li><a href="product-cables.html">Cables</a></li>
+              <li><a href="product-keyboard.html">Keyboard & Mouse</a></li>
+
+         <li class="dropdown">
+                <a href="#">Network Devices<i class="bi bi-chevron-down dropdown-indicator"></i></a> 
+                <ul>
+                    <li><a href="product-router.html">Router</a></li>
+                    <li><a href="product-accesspoint.html">Access Point</a></li>
+                    <li><a href="product-switch.html">Switch</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Security and Surveillance<i class="bi bi-chevron-down dropdown-indicator"></i></a> 
+              <ul>
+                  <li><a href="product-cctv.html">CCTV</a></li>
+                  <li><a href="product-dvr.html">DVR</a></li>
+              </ul>
+          </li>
+
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  
+<!-- Bootstrap Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="assets/images/Monitor/1920x1080/Monitor_EG24S1 Pro.png" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="assets/images/Monitor/1920x1080/Monitor_EG24S1.png" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item" data-bs-interval="6000">
+      <img src="assets/images/Monitor/1920x1080/Monitor_EG24SW.png" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+        
+  <section class="brand-section d-flex align-items-center justify-content-center">
+  
+    <div class="brand-container overflow-hidden">
+        <div class="brand-logos d-flex">
+            <img src="assets/images/brand/laptop/dell.jpg" alt="Brand 1">
+            <img src="assets/images/brand/laptop/acer.jpg" alt="Brand 2">
+            <img src="assets/images/brand/laptop/asus.jpg" alt="Brand 3">
+            <img src="assets/images/brand/laptop/hp.jpg" alt="Brand 4">
+            <img src="assets/images/brand/laptop/Huawei.png" alt="Brand 5">
+            <img src="assets/images/brand/laptop/lenovo.jpg" alt="Brand 6">
+            <img src="assets/images/brand/laptop/toshiba.jpg" alt="Brand 7">
+             
+        </div>
+    </div>
+      </div>
+   
+</section>
+<section class="product-cards-section">
+    <div class="container">
+        <h2 class="mobile-section-title">Featured Laptops</h2>
+        <div class="row justify-content-center">
+
+             <!-- Laptop Product Card 1 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/EG24S1/NVISION_EG24S1-33.png" alt="NVISION_EG24S1">
+                    <div class="monitor-info">
+                        <h5>N-Vision EG24S1</h5>
+                        <p>24 inches, Full HD</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop1')">View</button>
+                    </div>
+                </div>
+            </div>
+            <!---------------- Laptop Product Card 2 -------------------------------->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/EG24S1 Pro/NVISION_EG24S1_PRO-32.png" alt="NVISION_EG24S1_PRO">
+                    <div class="monitor-info">
+                        <h5>N-Vision EG24S1 PRO</h5>
+                        <p>24 inches, Full HD</p>
+                        <span class="monitor-price">₱ </span>
+                     <!-- Buttons to trigger the modal -->
+                        <button type="button"  onclick="openModal('laptop2')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Laptop Product Card 3 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/EG24SW/NVISION_EG24SW-33.png" alt="NVISION_EG24SW">
+                    <div class="monitor-info">
+                        <h5>N-Vision EG24SW</h5>
+                        <p>23.8 inches, Full HD</p>
+                        <span class="monitor-price">₱ </span>
+                       <button type="button"  onclick="openModal('laptop3')">View</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Laptop Product Card 4 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/ES32G1/N-VSION_ES32G1-34.png" alt="N-VSION_ES32G1">
+                    <div class="monitor-info">
+                        <h5>N-Vision ES32G1</h5>
+                        <p>32 inches, Full HD</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop4')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Laptop Product Card 5 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/ES32G1Pro/NVISION_ES32G1 Pro-34.png" alt="NVISION_ES32G1 Pro">
+                    <div class="monitor-info">
+                        <h5>N-Vision ES32G1 Pro</h5>
+                        <p>32 inches, Full HD</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop5')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Laptop Product Card 6 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/H22V8/N-VISION_H22V8-34.png" alt="N-VISION H22V8">
+                    <div class="monitor-info">
+                        <h5>N-Vision H22V8</h5>
+                        <p>21.5 inches, Full HD</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop6')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Laptop Product Card 7 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/HKC - MB27V9F/HKC_MB27V9F-32 (2).png" alt="HKC_MB27V9F">
+                    <div class="monitor-info">
+                        <h5>HKC MB27V9F</h5>
+                        <p>27 inches</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop7')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Laptop Product Card 8 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/HKC-MB24V9F/HKC_MB24V9F-33.png" alt="HKC_MB24V9F">
+                    <div class="monitor-info">
+                        <h5>HKC MB24V9F</h5>
+                        <p>23.8 inches</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop8')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Laptop Product Card 9 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/HKC-MG27H13Q/HKC_MG27H13Q-34.png" alt="HKC_MG27H13Q">
+                    <div class="monitor-info">
+                        <h5>HKC MG27H13Q</h5>
+                        <p>27 inches </p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop9')">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Laptop Product Card 10 -->
+            <div class="custom-col">
+                <div class="monitor-card">
+                    <img src="assets/images/Monitor/470x400/HKC-MG34H2UB/HKC_N2755PRo-33.png" alt="HKC_N2755PRo">
+                    <div class="monitor-info">
+                        <h5>HKC N2755 PRO</h5>
+                        <p> 27 inches</p>
+                        <span class="monitor-price">₱ </span>
+                        <button type="button"  onclick="openModal('laptop10')">View</button>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Laptop Product Card 11 -->
+            <div class="custom-col">
+              <div class="monitor-card">
+                  <img src="assets/images/Monitor/470x400/N190HD/NVISION_N190 HD 1.png" alt="NVISION_N190">
+                  <div class="monitor-info">
+                      <h5>N-Vision N190 HD</h5>
+                      <p>19 inches</p>
+                      <span class="monitor-price">₱ </span>
+                      <button type="button"  onclick="openModal('laptop11')">View</button>
+                  </div>
+              </div>
+          </div>
+          
+  <!-- Laptop Product Card 12 -->
+  <div class="custom-col">
+    <div class="monitor-card">
+        <img src="assets/images/Monitor/470x400/N2510/Nvision_N2510(2).png" alt="NVISION_N2510">
+        <div class="monitor-info">
+            <h5>N-Vision N2510</h5>
+            <p>25 inches, Full HD</p>
+            <span class="monitor-price">₱ </span>
+            <button type="button"  onclick="openModal('laptop12')">View</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Laptop Product Card 13 -->
+  <div class="custom-col">
+    <div class="monitor-card">
+        <img src="assets/images/Monitor/470x400/N2755Pro/N-Vision_N2755PRo-34.png" alt="NVISION_N2755PRo">
+        <div class="monitor-info">
+            <h5>N-Vision N2755 PRO</h5>
+            <p>27 inches, Full HD</p>
+            <span class="monitor-price">₱ </span>
+            <button type="button"  onclick="openModal('laptop13')">View</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Laptop Product Card 14 -->
+  <div class="custom-col">
+    <div class="monitor-card">
+        <img src="assets/images/Monitor/470x400/QG27P1/NVSION_QG27P1.png" alt="NVISION_QG27P1">
+        <div class="monitor-info">
+            <h5>N-Vision QG27P1</h5>
+            <p>27 inches, Full HD</p>
+            <span class="monitor-price">₱ </span>
+            <button type="button"  onclick="openModal('laptop14')">View</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Laptop Product Card 15 -->
+  <div class="custom-col">
+    <div class="monitor-card">
+        <img src="assets/images/Monitor/470x400/S2515/N-Vision_S2515-1.png" alt="NVISION_S2515">
+        <div class="monitor-info">
+            <h5>N-Vision S2515</h5>
+            <p>24 inches, Full HD</p>
+            <span class="monitor-price">₱ </span>
+            <button type="button"  onclick="openModal('laptop15')">View</button>
+        </div>
+    </div>
+</div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Product View Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">productname</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="view-container">
+          <!-- Product Gallery -->
+          <div class="gallery-container">
+            <img id="mainImage" class="main-image" src="assets/images/laptop/laptop-cards/Lenovo Ideapad Flex 3.png" alt="Main Image" onclick="openFullscreenModal()">
+            
+            <div class="thumbnail-wrapper">
+              <div class="preview-button preview-prev-button" onclick="prevImage()">&#10094;</div>
+              <div class="thumbnail-container">
+                <div class="thumbnails" id="thumbnailList">
+                 
+                </div>
+              </div>
+              <div class="preview-button preview-next-button" onclick="nextImage()">&#10095;</div>
+            </div>
+          </div>
+
+<!-- Fullscreen Image Modal -->
+<div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fullscreenModalLabel">MONITOR</h5>
+        <button type="button" class="btn-close close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Fullscreen Image -->
+        <div class="fullscreen-image-wrapper">
+          <img id="fullscreenMainImage" class="fullscreen-img" src="" alt="Fullscreen View">
+        </div>
+
+        <!-- Thumbnails + Buttons Wrapper -->
+        <div class="fullscreen-thumbnail-container">
+          <button class="prev-button" onclick="prevFullscreenImage()">&#10094;</button>
+          
+          <!-- Wrapper for the Thumbnails -->
+          <div class="fullscreen-thumbnail-wrapper">
+            <div class="fullscreen-thumbnails" id="fullscreenThumbnailList"></div>
+          </div>
+
+          <button class="next-button" onclick="nextFullscreenImage()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+          <!-- Product Details -->
+          <div class="product-info-container" id="infoContainer">
+            <!-- Product Details Section -->
+            <div class="product-details">
+              <h2 class="product-title" id="modalProductTitle"></h2>
+              <p class="short-description" id="modalShortDescription"></p>
+              <p class="product-price" id="modalProductPrice"></p>
+
+              <div class="product-colors">
+                <span class="color-label">Colors:</span>
+                <div class="color-options" id="modalProductColors">
+                 
+                </div>
+              </div>
+
+
+            </div>
+
+              <br>
+            <div>
+              <h5 class="product-features">Product Features</h5>
+            </div>
+
+                        <!-- Highlights Section -->
+                        <div class="modems-container" id="modalProductHighlights"></div>
+                    </div>
+                </div> <!-- End view-container -->
+            </div> <!-- End modal-body -->
+        </div> <!-- End modal-content -->
+    </div> <!-- End modal-dialog -->
+</div> <!-- End modal -->
+
+
+
+
+
+    <script>
+      function initCarousel(carouselClass) {
+    let currentIndex = 0;
+    const carousel = document.querySelector(`.${carouselClass}`);
+    const totalCards = carousel.querySelectorAll('.custom-col').length;
+    const visibleCards = 5; 
+    const maxIndex = totalCards - visibleCards;
+
+    function moveSlide(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        } else if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
+        }
+        const translateValue = -currentIndex * (100 / visibleCards) + "%";
+        carousel.style.transform = `translateX(${translateValue})`;
+    }
+
+    return moveSlide;
+}
+
+// Initialize carousels
+const moveLaptopMobileSlide = initCarousel('carousellaptopmobile');
+const moveLaptopCCTVSlide = initCarousel('carousellaptopcctv');
+
+    </script>
+
+
+
+ <div class="curvedproduct">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 220">
+
+    <path fill="#a2a3a3" fill-opacity="1" d="M0,256L480,160L960,224L1440,160L1440,320L960,320L480,320L0,320Z"></path>
+</svg>
+    </div>
+     <!-- ======= Footer Start ======= -->
+  <footer id="footer" class="footer dark-background">
+  <div id="particles-footer" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+  <div class="footer-top"> 
+          
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-lg-2 col-md-3 footer-links">
+
+          <div class="footer-image">
+            <img src="assets/images/logo.png" alt="services">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Hi-Tech Alley</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Pigangay Building</p>
+            <p>Poblacion West, Lamut, Ifugao</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+63 917 166 6221</span></p>
+            <p><strong>Email:</strong> <span>hitechavlley@example.com</span></p>
+          </div>
+        </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Services</a></li>
+              <li><a href="sevices.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="mobile-repair.html">Mobile Repair</a></li>
+              <li><a href="laptop-repair.html">Laptop Repair</a></li>
+              <li><a href="printer-repair.html">Printer Repair</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><a href="product-smartphone.html">Smartphone</a></li>
+              <li><a href="product-laptop.html">Laptop</a></li>
+              <li><a href="product-cctv.html">CCTV</a></li>
+              <li><a href="product-monitor.html">Monitor</a></li>
+              <li><a href="product-powerbank.html">Powerbank</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright2025 <strong><span>Hi-TechAlley</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+  
+  </footer>
+  
+<div id="cookie-banner" class="cookie-banner">
+    <p>We use cookies to enhance your experience. By clicking "Accept", you agree to our use of cookies.</p>
+    <button id="accept-cookies">Accept</button>
+    <!-- Reset cookies button -->
+</div>
+
+
+
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  
+
+
+
+
+
+      <script>
+       const infoContainer = document.querySelector(".product-info-container");
+const viewContainer = document.querySelector(".view-container");
+
+window.addEventListener("wheel", (event) => {
+    const atBottom = infoContainer.scrollHeight - infoContainer.scrollTop <= infoContainer.clientHeight;
+    const atTop = infoContainer.scrollTop === 0;
+  
+    // If scrolling down but not at the bottom, scroll infoContainer only
+    if (event.deltaY > 0 && !atBottom) {
+        event.preventDefault();
+        infoContainer.scrollTop += event.deltaY;
+    }
+
+    // If scrolling up but not at the top, scroll infoContainer only
+    if (event.deltaY < 0 && !atTop) {
+        event.preventDefault();
+        infoContainer.scrollTop += event.deltaY;
+    }
+});
+
+// Handle sticky effect removal at bottom
+window.addEventListener("scroll", () => {
+    const containerBottom = infoContainer.offsetTop + infoContainer.offsetHeight;
+    const scrollY = window.scrollY + window.innerHeight;
+
+    // If the page scrolls beyond the product-info-container, stop sticky
+    if (scrollY >= containerBottom) {
+        infoContainer.style.position = "relative";
+    } else {
+        infoContainer.style.position = "sticky";
+        infoContainer.style.top = "20px";
+    }
+});
+
+    </script>
+
+  
+
+
+    <script>
+function openFullscreenModal() {
+    const mainImage = document.getElementById("mainImage").src;
+    document.getElementById("fullscreenImage").src = mainImage;
+    var fullscreenModal = new bootstrap.Modal(document.getElementById("fullscreenModal"));
+    fullscreenModal.show();
+}
+
+function updateFullscreenImage(element) {
+    document.getElementById("fullscreenImage").src = element.src;
+}
+</script>
+
+
+    <script>
+    const products = {
+    laptop1: {
+        name: "N-Vision EG24S1",
+        title: "MONITOR",
+        description: "24 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/EG24S1/NVISION_EG24S1-33.png",
+        thumbnails: [
+                "assets/images/Monitor/470x400/EG24S1/NVISION_EG24S1-33.png",
+                "assets/images/Monitor/470x400/EG24S1/NVISION_EG24S1-32.png",
+                "assets/images/Monitor/470x400/EG24S1/NVISION_EG24S1-34.png",
+        ],
+           colors: [
+             { name: "Black", hex: "#000000" }
+        ],
+
+       highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 24 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 1ms (Gray-to-Gray)",
+                    "<strong>Brightness: (cm):</strong> 230 cd/m²",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Aspect Ratio:</strong> 16:9",
+                    "<strong>Blacklight Type:</strong> WLED (White LED)"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Low Blue Light Technology: Designed to reduce blue light emission, minimizing eye strain during extended gaming sessions",
+                    "AMD FreeSync Support: Synchronizes the monitor's refresh rate with compatible graphics cards to eliminate screen tearing and reduce stuttering"
+                ]
+           },
+        ]
+    },
+    laptop2: {
+         name: "N-Vision EG24S1 PRO",
+        title: "MONITOR",
+        description: "24 inches, Full HD",
+        price: "₱  ",
+        mainImage: "assets/images/Monitor/470x400/EG24S1 Pro/NVISION_EG24S1_PRO-32.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/EG24S1 Pro/NVISION_EG24S1_PRO-32.png",
+            "assets/images/Monitor/470x400/EG24S1 Pro/NVISION_EG24S1_PRO-33.png",
+            "assets/images/Monitor/470x400/EG24S1 Pro/NVISION_EG24S1_PRO-34.png",
+        ],
+          colors: [
+             { name: "Black", hex: "#000000" }
+        ],
+       highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 24 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 1ms (Gray-to-Gray)",
+                    "<strong>Brightness: (cm):</strong> 230 cd/m²",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Aspect Ratio:</strong> 16:9",
+                    "<strong>Blacklight Type:</strong> WLED (White LED)"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Adaptive Sync: Supports AMD FreeSync technology to reduce screen tearing and stuttering",
+                    "Low Blue Light Technology: Designed to minimize eye strain during extended gaming sessions"
+                ]
+           },
+        ]
+    },
+
+      laptop3: {
+        name: "N-Vision EG24SW",
+        title: "MONITOR",
+        description: "23.8 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/EG24SW/NVISION_EG24SW-33.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/EG24SW/NVISION_EG24SW-33.png",
+            "assets/images/Monitor/470x400/EG24SW/NVISION_EG24SW-32.png",
+            "assets/images/Monitor/470x400/EG24SW/NVISION_EG24SW-34.png",
+        ], 
+        colors: [
+             { name: "White", hex: "#ffffff" }
+        ],
+
+      highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 23.8 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 1ms (Gray-to-Gray)",
+                    "<strong>Brightness: (cm):</strong> 230 cd/m²",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Aspect Ratio:</strong> 16:9",
+                    "<strong>Blacklight Type:</strong> WLED (White LED)"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Adaptive Sync: Supports AMD FreeSync technology to reduce screen tearing and stuttering",
+                    "Low Blue Light Technology: Designed to minimize eye strain during extended gaming sessions",
+                    " Design: Features a sleek white finish with a frameless design, suitable for various gaming setups"
+                ]
+           },
+        ]
+    },
+    laptop4: {
+       name: "N-Vision ES32G1",
+        title: "MONITOR",
+        description: "32 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/ES32G1/N-VSION_ES32G1-34.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/ES32G1/N-VSION_ES32G1-34.png",
+            "assets/images/Monitor/470x400/ES32G1/N-VSION_ES32G1-32.png",
+            "assets/images/Monitor/470x400/ES32G1/N-VSION_ES32G1-33.png",
+        ],
+        colors: [
+             { name: "Black", hex: "#000000" }
+        ],
+      highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 32 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 1ms  (Overdrive)",
+                    "<strong>Brightness: (cm):</strong> 230 cd/m²",
+                    "<strong>Viewing Angels:</strong> 170° horizontal and 170° vertical"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Adaptive Sync: Supports AMD FreeSync technology to reduce screen tearing and stuttering",
+                    " RGB Backlight: Equipped with RGB lighting to enhance the gaming ambiance",
+                    " VESA Mount Compatibility: Not supported"
+                ]
+           },
+        ]
+    },
+      laptop5: {
+      name: "N-Vision ES32G1 PRO",
+        title: "MONITOR",
+        description: "32 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/ES32G1Pro/NVISION_ES32G1 Pro-34.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/ES32G1Pro/NVISION_ES32G1 Pro-34.png",
+            "assets/images/Monitor/470x400/ES32G1Pro/NVISION_ES32G1 Pro-33.png",
+        ],
+        colors: [
+             { name: "Black", hex: "#000000" }
+        ],
+      highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 32 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 1ms (Overdrive)",
+                    "<strong>Brightness: </strong> 230 cd/m²",
+                    "<strong>Viewing Angels:</strong> 170° horizontal and 170° vertical",
+                    "<strong>Display Colors:</strong> 16.7 million colors"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Adaptive Sync: Supports AMD FreeSync technology to reduce screen tearing and stuttering",
+                    "RGB Backlight: Equipped with RGB lighting to enhance the gaming ambiance",
+                    "VESA Mount Compatibility: Not supported"
+                ]
+           },
+        ]
+    },
+      laptop6: {
+       name: "N-Vision H22V8",
+        title: "MONITOR",
+        description: "21.5 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/H22V8/N-VISION_H22V8-34.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/H22V8/N-VISION_H22V8-34.png",
+            "assets/images/Monitor/470x400/H22V8/N-VISION_H22V8-33.png",
+        ],
+        colors: [
+             { name: "Black", hex: "#000000" }
+        ],
+       highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 21.5 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 1ms (Gray-to-Gray)",
+                    "<strong>Brightness: </strong> 250 cd/m² (Maximum)",
+                    "<strong>Viewing Angels:</strong> 170° horizontal and 170° vertical",
+                    "<strong>Display Colors:</strong> 16.7 million colors"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Display: LED-backlit TN panel with a resolution of 1920 x 1080 pixels",
+                    "Performance: A 5ms response time and a 60Hz refresh rate for smooth visuals.",
+                    "Connectivity: Equipped with one HDMI and one VGA port; an HDMI cable is included",
+                    "Mounting: Supports VESA mounting with a 100 x 100mm pattern for flexible installation options",
+                ]
+           },
+        ]
+    },
+      laptop7: {
+        name: "HKC MB27V9F",
+        title: "MONITOR",
+        description: "27 inches",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/HKC - MB27V9F/HKC_MB27V9F-32 (2).png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/HKC - MB27V9F/HKC_MB27V9F-32 (2).png",
+            "assets/images/Monitor/470x400/HKC - MB27V9F/HKC_MB27V9F-32 (1).png",
+            "assets/images/Monitor/470x400/HKC - MB27V9F/HKC_MB27V9F-32 (3).png",
+
+          ],
+        colors: [
+             { name: "Black", hex: "#2A3335" }
+        ],
+       highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 27 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong>  1ms MPRT (Moving Picture Response Time)",
+                    "<strong>Brightness: </strong> 250 cd/m² ",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Display Colors:</strong> 16.7 million colors"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Adaptive Sync: Supports FreeSync technology to reduce screen tearing and stuttering",
+                    "Design: Features a frameless design for a sleek and modern look" 
+                ]
+           },
+        ]
+    },
+    laptop8: {
+        name: "HKC MB24V9F",
+        title: "MONITOR",
+        description: "23.8 inches",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/HKC-MB24V9F/HKC_MB24V9F-33.png",
+        thumbnails: [
+        "assets/images/Monitor/470x400/HKC-MB24V9F/HKC_MB24V9F-33.png",
+        "assets/images/Monitor/470x400/HKC-MB24V9F/HKC_MB24V9F-32.png",
+        "assets/images/Monitor/470x400/HKC-MB24V9F/HKC_MB24V9F-34.png",
+
+      ],
+        colors: [
+             { name: "Black", hex: "#2A3335" }
+        ],
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 23.8 inches",
+                    "<strong>Resolution: (cm):</strong> Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong>  1ms MPRT (Moving Picture Response Time)",
+                    "<strong>Brightness: </strong> 250 cd/m² ",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Display Colors:</strong> 16.7 million colors"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Adaptive Sync: Supports FreeSync technology to reduce screen tearing and stuttering",
+                    "Design: Features an ultra-thin, narrow-border design suitable for various settings" 
+                ]
+           },
+        ]
+    },
+      laptop9: {
+       name: "HKC MG27H13Q",
+        title: "MONITOR",
+        description: "27 inches ",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/HKC-MG27H13Q/HKC_MG27H13Q-34.png",
+        thumbnails: [
+        "assets/images/Monitor/470x400/HKC-MG27H13Q/HKC_MG27H13Q-34.png",
+        "assets/images/Monitor/470x400/HKC-MG27H13Q/HKC_MG27H13Q-33.png",
+        "assets/images/Monitor/470x400/HKC-MG27H13Q/HKC_MG27H13Q-31.png",
+        "assets/images/Monitor/470x400/HKC-MG27H13Q/HKC_MG27H13Q-32.png",
+        ],
+        colors: [
+             { name: "Black", hex: "#151515" }
+        ],
+
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 27 inches",
+                    "<strong>Resolution: (cm):</strong>2560 x 1440 pixels (QHD)",
+                    "<strong>Response Time: </strong>  1ms (Gray-to-Gray)",
+                    "<strong>Brightness: </strong> 400 cd/m² ",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "HDR Support: HDR400 certification for enhanced contrast and brightness",
+                    "Adaptive Sync: Supports FreeSync technology to reduce screen tearing and stuttering",
+                    "Design: Features a frameless design with a compact hexagonal base to save desk space" 
+                ]
+           },
+        ]
+    },
+      laptop10: {
+          name: "HKC N2755 PRO",
+        title: "MONITOR",
+        description: " 27 inches",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/HKC-MG34H2UB/HKC_N2755PRo-32.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/HKC-MG34H2UB/HKC_N2755PRo-32.png",
+            "assets/images/Monitor/470x400/HKC-MG34H2UB/HKC_N2755PRo-33.png",
+        ],
+        colors: [
+             { name: "Black", hex: "#151515" }
+        ],
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 27 inches",
+                    "<strong>Resolution: (cm):</strong>Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 5ms (Gray-to-Gray)",
+                    "<strong>Brightness: </strong> 210 cd/m² ",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Backlight Type:</srong>LED"
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "HDR10 Support: Enhances contrast and color for a more dynamic image",
+                    "Slim Bezel Design: Provides a modern look and is suitable for multi-monitor setups",
+                    "Energy Efficiency: Designed to consume less power, contributing to energy savings" 
+                ]
+           },
+        ]
+    },
+      laptop11: {
+        name: "N-Vision N190 HD",
+        title: "MONITOR",
+        description: "19 inches",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/N190HD/NVISION_N190 HD 1.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/N190HD/NVISION_N190 HD 1.png",
+            "assets/images/Monitor/470x400/N190HD/NVISION_N190 HD 3.png",
+            "assets/images/Monitor/470x400/N190HD/NVISION_N190 HD 2.png",
+        ],
+        colors: [
+             { name: "Black", hex: "#151515" }
+        ],
+       highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 19 inches",
+                    "<strong>Resolution: (cm):</strong> 1440 x 900 pixels",
+                    "<strong>Response Time: </strong>  5ms",
+                    "<strong>Brightness: </strong> 250 cd/m² ",
+                    "<strong>Viewing Angels:</strong> 170° horizontal and 160° vertical",
+                    "Display Colors: 16.7 million colors" 
+
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Backlight: LED"
+                ]
+           },
+        ]
+    },
+      laptop12: {
+       name: "N-Vision N2510",
+        title: "MONITOR",
+        description: "25 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/N2510/Nvision_N2510(2).png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/N2510/Nvision_N2510(2).png",
+            "assets/images/Monitor/470x400/N2510/Nvision_N2510(1).png",
+          ],
+        colors: [
+             { name: "Black", hex: "#151515" }
+        ],
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong> 25 inches",
+                    "<strong>Resolution: (cm):</strong>Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 5ms ",
+                    "<strong>Power Input: </strong> 12V 2.5A",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Display: offering rich colors and deep contrast",
+                    " Performance: 5ms response time and a 100Hz refresh rate for smooth visuals",
+                    "Connectivity: One HDMI and one VGA port for versatile connectivity options" 
+                ]
+           },
+        ]
+    },
+      laptop13: {
+        name: "N-Vision N2755 PRO",
+        title: "MONITOR",
+        description: "27 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/N2755Pro/N-Vision_N2755PRo-34.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/N2755Pro/N-Vision_N2755PRo-34.png",
+            "assets/images/Monitor/470x400/N2755Pro/N-Vision_N2755PRo-33.png",
+            "assets/images/Monitor/470x400/N2755Pro/N-Vision_N2755PRo-32.png",
+            "assets/images/Monitor/470x400/N2755Pro/N-Vision_N2755PRo-31.png",
+          ],
+        colors: [
+             { name: "Grey", hex: "#3f3f3f" }
+        ],
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong>  27 inches",
+                    "<strong>Resolution: (cm):</strong>Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 5ms ",
+                    "<strong>Brightness: </strong> 210 cd/m²",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Backlight Type: </strong>LED",
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "HDR10 Support: Enhances contrast and color for a more dynamic image",
+                    "Slim Bezel Design: Provides a modern look and is suitable for multi-monitor setups",
+                    "Energy Efficiency: Designed to consume less power, contributing to energy savings" 
+                ]
+           },
+        ]
+    },
+      laptop14: {
+        name: "N-Vision QG27P1",
+        title: "MONITOR",
+        description: "27 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/QG27P1/NVSION_QG27P1.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/QG27P1/NVSION_QG27P1.png",
+            "assets/images/Monitor/470x400/QG27P1/QG27P1 (1).png",
+            "assets/images/Monitor/470x400/QG27P1/QG27P1 (2).png",
+        ],
+        colors: [
+             { name: "Black", hex: "#151515" }
+        ],
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong>  27 inches",
+                    "<strong>Resolution: (cm):</strong>Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 5ms (Gray-to-Gray)",
+                    "<strong>Brightness: </strong> 210 cd/m²",
+                    "<strong>Viewing Angels:</strong> 178° horizontal and 178° vertical",
+                    "<strong>Backlight Type: </strong>LED",
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "HDR10 Support: Enhances contrast and color for a more dynamic image.",
+                    "Slim Bezel Design: Provides a modern look and is suitable for multi-monitor setups",
+                    "Energy Efficiency: Designed to consume less power, contributing to energy savings" 
+                ]
+           },
+        ]
+    },
+      laptop15: {
+        name: "N-Vision S2515",
+        title: "MONITOR",
+        description: "24 inches, Full HD",
+        price: "₱ ",
+        mainImage: "assets/images/Monitor/470x400/S2515/N-Vision_S2515-1.png",
+        thumbnails: [
+            "assets/images/Monitor/470x400/S2515/N-Vision_S2515-1.png",
+            "assets/images/Monitor/470x400/S2515/N-Vision_S2515-3.png",
+            "assets/images/Monitor/470x400/S2515/N-Vision_S2515-2.png",
+          ],
+        colors: [
+             { name: "Black", hex: "#151515" },
+             { name: "White", hex: "#ffffff" }
+        ],
+        highlights: [
+            {
+                title: "Highlights",
+                details: [
+                    "<strong>Display: </strong>  27 inches",
+                    "<strong>Resolution: (cm):</strong>Full HD 1920 x 1080 pixels",
+                    "<strong>Response Time: </strong> 5ms (Gray-to-Gray)",
+                    "<strong>Brightness: </strong> 250 cd/m²",
+                    "<strong>Aspect Ratio:</strong> 16:9",
+                    "<strong>Backlight Type: </strong>LED",
+                ]
+            },
+            {
+                title: "Additional Features",
+                details: [
+                    "Frameless Design: Provides a modern look and is suitable for multi-monitor setups",
+                    "Energy Efficiency: Designed to consume less power, contributing to energy savings" 
+                ]
+           },
+        ]
+    }
+};
+
+let currentIndex = 0; 
+let currentLaptop = null; // Track the currently open laptop
+
+function openModal(productKey) {
+    currentLaptop = productKey; // Set the currently active laptop
+    const product = products[productKey];
+    
+    document.getElementById('productModalLabel').innerText = product.title;
+    document.getElementById('mainImage').src = product.mainImage;
+    
+    document.getElementById('modalProductTitle').innerText = product.name;
+    document.getElementById('modalShortDescription').innerText = product.description;
+    document.getElementById('modalProductPrice').innerText = `Price: ${product.price}`;
+    
+    const thumbnailList = document.getElementById('thumbnailList');
+    thumbnailList.innerHTML = ''; 
+    product.thumbnails.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.className = 'thumbnail';
+        img.src = src;
+        img.onclick = function() { changeImage(this); };
+        thumbnailList.appendChild(img);
+    });
+
+
+
+    // Update colors section
+    const colorsContainer = document.getElementById('modalProductColors');
+    colorsContainer.innerHTML = ''; // Clear existing colors
+    product.colors.forEach(color => {
+        const colorOption = document.createElement('span');
+        colorOption.className = 'color-option';
+        colorOption.style.backgroundColor = color.hex; // Set background color
+        colorOption.title = color.name; // Set title for hover effect
+        colorOption.onclick = function() {
+            // Handle color selection (optional)
+            console.log(`Selected color: ${color.name}`);
+        };
+        colorsContainer.appendChild(colorOption);
+    });
+
+    currentIndex = 0; // Reset current index for the new product
+
+// Populate highlights
+const highlightsContainer = document.getElementById('modalProductHighlights');
+highlightsContainer.innerHTML = ''; 
+
+product.highlights.forEach(section => {
+    // Create and append the section title
+    const sectionTitle = document.createElement('h5');
+    sectionTitle.innerHTML = `<b>${section.title}</b>`;
+    sectionTitle.style.fontSize = '1.4rem'; // Adjust the size as needed
+    sectionTitle.style.marginBottom = '20px'; // Add space below the title
+    highlightsContainer.appendChild(sectionTitle);
+
+    // Create a <ul> for the details
+    const ul = document.createElement('ul');
+    
+    // Loop through details and append them as list items
+    section.details.forEach(detail => {
+        const li = document.createElement('li');
+        li.innerHTML = detail; // Use innerHTML to allow HTML tags
+        ul.appendChild(li);
+    });
+
+    highlightsContainer.appendChild(ul); // Append the <ul> to the highlights container
+});
+
+// Add CSS to style the list
+const style = document.createElement('style');
+style.innerHTML = `
+    ul {
+        list-style-type: disc; /* Use disc for bullet points */
+        padding-left: 20px; /* Indent the list */
+        margin-left: 40px; /* Additional space on the left for the list */
+    }
+    li {
+        font-size: 1rem; /* Adjust the size as needed */
+       line-height: 1.5;
+    }
+`;
+document.head.appendChild(style);
+
+    const modal = new bootstrap.Modal(document.getElementById('productModal'));
+    modal.show();
+
+
+    // Set up next and previous buttons
+    document.getElementById('prevButton').onclick = prevImage;
+    document.getElementById('nextButton').onclick = nextImage;
+}
+
+function changeImage(element) {
+    const modal = document.getElementById("productModal");
+    const mainImage = modal.querySelector("#mainImage");
+    mainImage.src = element.src;
+
+    // Select only thumbnails inside the active modal
+    const thumbnails = modal.querySelectorAll(".thumbnail");
+    thumbnails.forEach(img => img.classList.remove("active"));
+    element.classList.add("active");
+
+    currentIndex = [...thumbnails].indexOf(element);
+    slideThumbnails();
+}
+function prevImage() {
+    const modal = document.getElementById("productModal"); // Get the modal
+    if (!modal || !currentLaptop) return;
+
+    const product = products[currentLaptop]; // Get the product
+    const thumbnails = modal.querySelectorAll(".thumbnail"); // Get all thumbnails inside the modal
+
+    if (thumbnails.length === 0) return;
+
+    if (currentIndex > 0) {
+        currentIndex--; // Move to previous thumbnail
+    } else {
+        currentIndex = thumbnails.length - 1; // Loop to last image
+    }
+
+    updateMainImage(product); // Update the image
+}
+
+function nextImage() {
+    const modal = document.getElementById("productModal");
+    if (!modal || !currentLaptop) return;
+
+    const product = products[currentLaptop];
+    const thumbnails = modal.querySelectorAll(".thumbnail");
+
+    if (thumbnails.length === 0) return;
+
+    if (currentIndex < thumbnails.length - 1) {
+        currentIndex++; // Move to next thumbnail
+    } else {
+        currentIndex = 0; // Loop to first image
+    }
+
+    updateMainImage(product);
+}
+
+function updateMainImage(product) {
+    const modal = document.getElementById("productModal");
+    const mainImage = modal.querySelector("#mainImage");
+
+    if (!product || !mainImage) return;
+
+    mainImage.src = product.thumbnails[currentIndex]; // Update main image
+
+    // Remove active class from all thumbnails
+    const thumbnails = modal.querySelectorAll(".thumbnail");
+    thumbnails.forEach(img => img.classList.remove("active"));
+
+    // Add active class to current thumbnail
+    if (thumbnails[currentIndex]) {
+        thumbnails[currentIndex].classList.add("active");
+    }
+
+    slideThumbnails();
+}
+let activeThumbnails = []; // Store active thumbnails
+
+function slideThumbnails() {
+    const modal = document.getElementById("productModal");
+    if (!modal || !currentLaptop) return;
+
+    // Select the correct thumbnail container inside the active modal
+    const thumbnailContainer = modal.querySelector(".thumbnail-container");
+    if (!thumbnailContainer) return;
+
+    // Ensure we're working only with the active product's thumbnails
+    activeThumbnails = [...thumbnailContainer.querySelectorAll(".thumbnail")];
+    if (activeThumbnails.length === 0) return;
+
+    const offset = currentIndex * -90; // Adjust this based on thumbnail width
+    activeThumbnails.forEach((thumb, index) => {
+        thumb.style.transition = "transform 0.5s ease-in-out";
+        thumb.style.transform = `translateX(${offset}px)`;
+    });
+}
+
+
+function openFullscreenModal() {
+    if (!currentLaptop) return;
+
+    const product = products[currentLaptop];
+    const fullscreenMainImage = document.getElementById("fullscreenMainImage");
+    fullscreenMainImage.src = document.getElementById("mainImage").src;
+
+    const fullscreenThumbnailList = document.getElementById("fullscreenThumbnailList");
+    fullscreenThumbnailList.innerHTML = "";
+
+    product.thumbnails.forEach((src, index) => {
+        const img = document.createElement("img");
+        img.className = "fullscreen-thumbnail"; // Updated to match CSS
+        img.src = src;
+        img.onclick = function () {
+            fullscreenMainImage.src = src;
+            currentIndex = index;
+            updateFullscreenActiveThumbnail();
+            slideFullscreenThumbnails(); // Slide thumbnails when an image is clicked
+        };
+        fullscreenThumbnailList.appendChild(img);
+    });
+
+    currentIndex = 0; // Reset current index for fullscreen
+    updateFullscreenActiveThumbnail();
+    slideFullscreenThumbnails(); // Initial slide to the current index
+
+    const modal = new bootstrap.Modal(document.getElementById("fullscreenModal"));
+    modal.show();
+}
+
+function updateFullscreenActiveThumbnail() {
+    const thumbnails = document.querySelectorAll("#fullscreenThumbnailList img");
+    thumbnails.forEach(img => img.classList.remove("active"));
+
+    if (thumbnails[currentIndex]) {
+        thumbnails[currentIndex].classList.add("active");
+    }
+}
+
+function prevFullscreenImage() {
+    if (!currentLaptop) return;
+    const product = products[currentLaptop];
+
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : product.thumbnails.length - 1;
+    document.getElementById("fullscreenMainImage").src = product.thumbnails[currentIndex];
+
+    updateFullscreenActiveThumbnail();
+    slideFullscreenThumbnails(); // Slide thumbnails when navigating
+}
+
+function nextFullscreenImage() {
+    if (!currentLaptop) return;
+    const product = products[currentLaptop];
+
+    currentIndex = currentIndex < product.thumbnails.length - 1 ? currentIndex + 1 : 0;
+    document.getElementById("fullscreenMainImage").src = product.thumbnails[currentIndex];
+
+    updateFullscreenActiveThumbnail();
+    slideFullscreenThumbnails(); // Slide thumbnails when navigating
+}
+
+function slideFullscreenThumbnails() {
+    const fullscreenThumbnailList = document.getElementById("fullscreenThumbnailList");
+    const thumbnails = fullscreenThumbnailList.querySelectorAll("img");
+    
+    if (thumbnails.length === 0) return;
+
+    const offset = currentIndex * -90; // Adjust this based on thumbnail width
+    fullscreenThumbnailList.style.transition = "transform 0.5s ease-in-out"; // Add smooth effect
+    fullscreenThumbnailList.style.transform = `translateX(${offset}px)`; // Use template literals for correct syntax
+}
+</script>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Custom scripts -->
+ <script src="assets/js/script.js"></script>
+  <script src="assets/js/particles.js"></script>
+
+
+</body>
+</html>
+
